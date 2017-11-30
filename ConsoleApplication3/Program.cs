@@ -36,7 +36,7 @@ namespace ConsoleApplication3
             Print(q2);
             Console.WriteLine("---------------------------------------");
 
-            //Kiknek van a leghosszabb vagy legrövidebb nevük?
+            // Who have the shortest names?
             var q3 = from person in people
                      let minNameLength = people.Min(p => p.Name.Length)
                      let maxNameLength = people.Max(p => p.Name.Length)
